@@ -1,7 +1,7 @@
 # Tesbihat — indirme sayfası (yayın deposu)
 
 Bu depodaki `index.html` ve `gorseller/` **üretilmiştir**; elle düzenlemeyin.
-Kaynağı uygulamanın kendi deposundaki `web/` klasörüdür ve
+Kaynağı uygulamanın kendi deposundaki `site/` klasörüdür ve
 
     bash scripts/site_yayinla.sh
 

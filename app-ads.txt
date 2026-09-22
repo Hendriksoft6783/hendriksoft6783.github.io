@@ -1,3 +1,3 @@
 # Tesbihat (com.hamit.tesbihat) — Google AdMob
-# Kaynak: web/app-ads.txt (uygulama deposu). Yayın betiği kök adrese kopyalar.
+# Kaynak: site/app-ads.txt (uygulama deposu). Yayın betiği kök adrese kopyalar.
 google.com, pub-1402936387958567, DIRECT, f08c47fec0942fa0
