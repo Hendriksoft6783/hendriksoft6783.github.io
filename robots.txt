@@ -1,0 +1,14 @@
+# Tesbihat — APK indirme sayfası
+#
+# Kaynak: uygulama deposundaki site/robots.txt. Yayın deposuna
+# `scripts/site_yayinla.sh` tarafından kopyalanır; orada elle düzenlenmez.
+#
+# Neden tamamen açık: amaç uygulamanın indirilebilir olduğunu arama
+# motorlarına duyurmak. Engellenecek gizli bir bölüm yok — gizlilik sayfası da
+# mağaza kaydı için herkese açık olmak zorunda.
+User-agent: *
+Allow: /
+
+# Sitemap, arama motorlarının sayfayı kendiliğinden bulmasını sağlar;
+# yayın betiği bu satırdaki adresi gerçek yayın adresiyle doldurur.
+Sitemap: https://hamit4sl4n.github.io/sitemap.xml

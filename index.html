@@ -7,7 +7,16 @@
 <meta name="description" content="Tesbihat: 51 dua, 33 sure ve âyet, 99 Esmâ-i Hüsna, 9 zikir programı. Tamamen çevrimdışı çalışan Android uygulaması — APK olarak ücretsiz indir.">
 <meta name="theme-color" content="#0C0C10">
 <meta name="robots" content="index, follow">
+<meta name="author" content="4SL4N Studio">
+<meta name="application-name" content="Tesbihat">
+<!--
+  Anahtar kelimeler Google tarafından yok sayılır ama diğer motorlar (Yandex,
+  Bing) kısmen kullanıyor; başlık ve açıklamada geçen terimlerle sınırlı
+  tutuldu — tıka basa doldurmak spam sayılır.
+-->
+<meta name="keywords" content="zikirmatik, zikir, tesbihat, esmaül hüsna, dua, sure, namaz, hatırlatıcı, apk indir, android">
 <link rel="canonical" href="https://hamit4sl4n.github.io/">
+<link rel="sitemap" type="application/xml" href="https://hamit4sl4n.github.io/sitemap.xml">
 <link rel="icon" type="image/png" href="gorseller/simge-48.png">
 
 <!-- Bağlantı paylaşıldığında (WhatsApp, Telegram, X) çıkan önizleme kartı -->
@@ -20,7 +29,12 @@
 <meta property="og:image" content="https://hamit4sl4n.github.io/gorseller/kapak.jpg">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Tesbihat kapak görseli: altın misbaha halkası ve uygulama ekranları">
+<meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tesbihat — Zikirmatik, Dua ve Esmâ-i Hüsna">
+<meta name="twitter:description" content="51 dua, 33 sure, 99 Esmâ-i Hüsna ve 9 zikir programı. Tamamen çevrimdışı; Android için ücretsiz APK.">
+<meta name="twitter:image" content="https://hamit4sl4n.github.io/gorseller/kapak.jpg">
 
 <!--
   ⚠️ Bu sayfa `scripts/site_yayinla.sh` tarafından yayımlanır.
@@ -28,7 +42,9 @@
   Çift küme parantezli yer tutucular yayın betiği tarafından doldurulur;
   elle düzenlenmez (kapı, doldurulmamış yer tutucu kalırsa yayımlamaz).
   Sayfa bağımsız olmalıdır: dışarıdan betik/stil/yazı tipi istemez (kapı denetler).
+  robots.txt ve sitemap.xml kardeş dosyalardır; üçü birlikte yayımlanır.
 -->
+<!-- uygulama-paketi: com.hamit.tesbihat -->
 <style>
   :root{
     --altin:#FFD700; --altin-koyu:#C9A400; --altin-yumusak:#FFE9A8;
@@ -175,6 +191,52 @@
     .kart,ol.adimlar li,details{border-color:#999;background:#fff}
   }
 </style>
+
+<!--
+  Yapısal veri (JSON-LD): arama motoruna bu sayfanın bir uygulama indirme
+  sayfası olduğunu, ücretsiz dağıtıldığını ve kimin yayımladığını söyler.
+  Betik DEĞİL, yalnızca veri: çalıştırılabilir kod içermez ve yayın kapısı
+  sayfada yalnızca bu tür `application/ld+json` bloğuna izin verir.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Tesbihat",
+  "alternateName": "Tesbihat: Zikirmatik & Dua",
+  "applicationCategory": "LifestyleApplication",
+  "applicationSubCategory": "Religion & Spirituality",
+  "operatingSystem": "Android 7.0 ve üzeri",
+  "softwareVersion": "1.0.0",
+  "fileFormat": "application/vnd.android.package-archive",
+  "fileSize": "58333268",
+  "downloadUrl": "https://github.com/hamit4sl4n/hamit4sl4n.github.io/releases/latest/download/Tesbihat.apk",
+  "installUrl": "https://github.com/hamit4sl4n/hamit4sl4n.github.io/releases/latest/download/Tesbihat.apk",
+  "inLanguage": "tr",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "TRY"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "4SL4N Studio"
+  },
+  "description": "Tesbihat: 51 dua, 33 sure ve âyet, 99 Esmâ-i Hüsna ve 9 zikir programı. Tamamen çevrimdışı çalışan Android zikirmatik uygulaması.",
+  "screenshot": "https://hamit4sl4n.github.io/gorseller/ekran-01.jpg",
+  "featureList": [
+    "Animasyonlu zikirmatik ve hazır hedefler",
+    "Ekranı açık tutma ve ses tuşuyla sayma",
+    "9 hazır zikir programı",
+    "51 dua ve 33 sure/âyet",
+    "99 Esmâ-i Hüsna: anlam ve âyet bağlantısıyla",
+    "İstatistik, gün serisi ve paylaşılabilir özet kartı",
+    "Akıllı günlük hatırlatıcı",
+    "Günün âyeti ve hadisi"
+  ]
+}
+</script>
 </head>
 <body>
 <div class="kap">
@@ -325,14 +387,14 @@
     <p style="color:var(--solgun);font-size:.93rem;margin-top:-6px">
       İndirdiğin APK'nın bütünlüğünü kontrol etmek istersen SHA-256 özeti:
     </p>
-    <code class="hash">2bf6b30c13d404761b4bf27457b83fd701bef76776435204f004cc802efadd9e</code>
+    <code class="hash">06fb7073292e1e03a79b3b33f235af46a1f90c0140a8e864721f240c30ced40d</code>
   </section>
 
   <footer>
     <p><strong>Tesbihat</strong> · <strong>4SL4N Studio</strong> ·
        <a href="https://hamit4sl4n.github.io/gizlilik/">Gizlilik politikası</a> ·
        <a href="mailto:hamitaslan85@gmail.com">hamitaslan85@gmail.com</a></p>
-    <p>Son güncelleme: 22 Eylül 2026 · Paket: <code>com.hamit.tesbihat</code><br>
+    <p>Son güncelleme: 23 Eylül 2026 · Paket: <code>com.hamit.tesbihat</code><br>
        Bu sayfa uygulamanın kendi deposundaki <code>site/index.html</code>
        kaynağından üretilip yayımlanır.</p>
   </footer>
