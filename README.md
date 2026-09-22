@@ -1,2 +1,14 @@
-# hamit4sl4n.github.io
-Tesbihat — APK indirme sayfası (üretilen; kaynak: hamit4sl4n/tesbihat)
+# Tesbihat — indirme sayfası (yayın deposu)
+
+Bu depodaki `index.html` ve `gorseller/` **üretilmiştir**; elle düzenlemeyin.
+Kaynağı uygulamanın kendi deposundaki `web/` klasörüdür ve
+
+    bash scripts/site_yayinla.sh
+
+komutuyla buraya gönderilir. APK ise her sürümde Releases bölümüne yüklenir
+(varlık adı sabittir: `Tesbihat.apk`); indirme bağlantısı bu yüzden sürümler
+arasında değişmez.
+
+Bu depo herkese açık olmak zorundadır: GitHub Pages ücretsiz planda yalnızca
+public depolarda yayın yapar, uygulamanın kaynak kodu ise private kalır.
+Ayrıca `app-ads.txt`, alan adının **kökünde** olması gerektiği için buradadır.
