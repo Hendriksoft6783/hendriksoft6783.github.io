@@ -1,14 +1,7 @@
-# Tesbihat — APK indirme sayfası
-#
-# Kaynak: uygulama deposundaki site/robots.txt. Yayın deposuna
-# `scripts/site_yayinla.sh` tarafından kopyalanır; orada elle düzenlenmez.
-#
-# Neden tamamen açık: amaç uygulamanın indirilebilir olduğunu arama
-# motorlarına duyurmak. Engellenecek gizli bir bölüm yok — gizlilik sayfası da
-# mağaza kaydı için herkese açık olmak zorunda.
+# 4SL4N Studio — https://hamit4sl4n.github.io/
+# Tüm site açıktır: uygulamaların indirilebilir olduğunu duyurmak istiyoruz.
+# robots.txt yalnızca alan adının kökünde okunur; bu yüzden tek dosya burada
+# durur ve her uygulama sayfasını da kapsar (nedenleri: STUDYO_SABLONU.md).
 User-agent: *
 Allow: /
-
-# Sitemap, arama motorlarının sayfayı kendiliğinden bulmasını sağlar;
-# yayın betiği bu satırdaki adresi gerçek yayın adresiyle doldurur.
 Sitemap: https://hamit4sl4n.github.io/sitemap.xml

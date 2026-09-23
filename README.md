@@ -1,17 +1,19 @@
-# Tesbihat — indirme sayfası (yayın deposu)
+# 4SL4N Studio — site (yayın deposu)
 
-Bu depodaki `index.html`, `robots.txt`, `sitemap.xml` ve `gorseller/`
-**üretilmiştir**; elle düzenlemeyin. Kaynağı uygulamanın kendi deposundaki
-`site/` klasörüdür ve
+Bu depo, stüdyonun **herkese açık** sitesidir: kök adres vitrin, her uygulama
+kendi alt dizininde (`/<slug>/`) durur. Dosyalar **üretilmiştir**; elle
+düzenlemeyin — bir sonraki yayında üzerine yazılır.
 
-    bash scripts/site_yayinla.sh
+- Vitrin: `/`
+- Uygulama sayfaları: \`/tesbihat/\` 
+- APK'lar: Releases (varlık adları sabit; bağlantı sürümler arasında değişmez)
+- `app-ads.txt`: alan adının **kökünde** olmak zorunda olduğu için burada
+- `robots.txt`: yalnızca kökte okunur; alt dizinlerdeki kopyalar dikkate alınmaz
+- `sitemap.xml`: sitemap **dizini**; kök sayfalar ve her uygulamanın sitemap'i
 
-komutuyla buraya gönderilir. APK ise her sürümde Releases bölümüne yüklenir
-(varlık adı sabittir: `Tesbihat.apk`); indirme bağlantısı bu yüzden sürümler
-arasında değişmez.
+Yayımlama, kaynak depolardaki `scripts/siteyi_yayinla.sh` ile yapılır ve
+vitrin ile tüm uygulama sayfaları **tek commit**'te gider.
 
 Bu depo herkese açık olmak zorundadır: GitHub Pages ücretsiz planda yalnızca
-public depolarda yayın yapar, uygulamanın kaynak kodu ise private kalır.
-Ayrıca `app-ads.txt`, alan adının **kökünde** olması gerektiği için buradadır;
-ikinci bir uygulamanın sayfası alt dizine yayımlanırken bu dosya oraya
-kopyalanmaz (alan adı doğrulaması kökteki tek dosyayla yapılır).
+public depolarda yayın yapar. Uygulamaların kaynak kodları ayrı **özel**
+depolarda kalır; buraya yalnızca yayına çıkacak statik dosyalar gelir.
