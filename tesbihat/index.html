@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tesbihat — Zikirmatik, Dua ve Esmâ-i Hüsna · APK indir</title>
 <meta name="description" content="Tesbihat: 51 dua, 33 sure ve âyet, 99 Esmâ-i Hüsna, 9 zikir programı. Tamamen çevrimdışı çalışan Android uygulaması — APK olarak ücretsiz indir.">
-<meta name="theme-color" content="#0C0C10">
+<meta name="theme-color" content="#07080A">
 <meta name="robots" content="index, follow">
 <meta name="author" content="4SL4N Studio">
 <meta name="application-name" content="Tesbihat">
@@ -29,144 +29,9 @@
 <meta name="twitter:title" content="Tesbihat — Zikirmatik, Dua ve Esmâ-i Hüsna">
 <meta name="twitter:description" content="51 dua, 33 sure, 99 Esmâ-i Hüsna ve 9 zikir programı. Tamamen çevrimdışı; Android için ücretsiz APK.">
 <meta name="twitter:image" content="https://hamit4sl4n.github.io/tesbihat/gorseller/kapak.jpg">
+<link rel="stylesheet" href="varliklar/yazitipleri.css">
+<link rel="stylesheet" href="varliklar/kimlik.css">
 <!-- uygulama-paketi: com.hamit.tesbihat -->
-<style>
-  :root{
-    --altin:#FFD700; --altin-koyu:#C9A400; --altin-yumusak:#FFE9A8;
-    --zemin:#0C0C10; --yuzey:#17171D; --yuzey-acik:#20202A;
-    --kenarlik:#2C2C36; --metin:#F4F4F7; --solgun:#A6A6B2; --silik:#7A7A86;
-    --yesil:#4ADE80;
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
-  body{
-    margin:0; padding:0;
-    background:var(--zemin);
-    background-image:radial-gradient(1100px 560px at 50% -10%, #1E1E28 0%, rgba(12,12,16,0) 70%);
-    color:var(--metin);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
-    font-size:17px; line-height:1.7;
-    -webkit-font-smoothing:antialiased;
-  }
-  .kap{max-width:820px;margin:0 auto;padding:0 22px 72px}
-  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-  a{color:var(--altin);text-decoration:none;border-bottom:1px solid rgba(255,215,0,.32)}
-  a:hover{border-bottom-color:var(--altin)}
-  /* --- Kahraman (hero) --------------------------------------------------- */
-  header.kahraman{text-align:center;padding:56px 0 8px}
-  .simge{
-    width:96px;height:96px;border-radius:24px;display:block;margin:0 auto 20px;
-    box-shadow:0 16px 44px rgba(255,215,0,.14), 0 2px 10px rgba(0,0,0,.5);
-  }
-  .amblem{
-    display:inline-block;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--altin);font-weight:700;margin:0 0 10px;
-  }
-  h1{
-    font-size:clamp(2.4rem,9vw,3.4rem);line-height:1.05;margin:0 0 14px;
-    font-weight:750;letter-spacing:-.03em;
-  }
-  .slogan{color:var(--solgun);font-size:1.05rem;margin:0 auto 30px;max-width:30em}
-  .slogan strong{color:var(--metin)}
-  .indir{
-    display:inline-block;padding:16px 44px;border-radius:999px;border:0;
-    background:linear-gradient(180deg,#FFE9A8,#FFD700 55%,#EAC500);
-    color:#171303;font-weight:800;font-size:1.08rem;letter-spacing:.01em;
-    box-shadow:0 12px 34px rgba(255,215,0,.26), inset 0 -2px 0 rgba(0,0,0,.16);
-    transition:transform .12s ease, box-shadow .12s ease;
-  }
-  .indir:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,215,0,.34), inset 0 -2px 0 rgba(0,0,0,.16);border:0}
-  .surum{color:var(--silik);font-size:.88rem;margin:14px 0 0;font-variant-numeric:tabular-nums}
-  .rozetler{list-style:none;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:0;margin:26px 0 0}
-  .rozetler li{
-    font-size:.78rem;color:var(--solgun);padding:5px 13px;border-radius:999px;
-    background:var(--yuzey);border:1px solid var(--kenarlik);
-  }
-  /* --- Bölümler ----------------------------------------------------------- */
-  section{margin-top:58px}
-  h2{
-    font-size:1.32rem;margin:0 0 20px;padding-bottom:10px;font-weight:650;
-    border-bottom:1px solid var(--kenarlik);letter-spacing:-.01em;
-  }
-  h2 span{color:var(--altin-koyu);font-weight:700;margin-right:8px}
-  /* --- Özellikler --------------------------------------------------------- */
-  .izgara{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px}
-  .kart{
-    background:var(--yuzey);border:1px solid var(--kenarlik);border-radius:14px;
-    padding:18px 20px;
-  }
-  .kart h3{margin:0 0 7px;font-size:1rem;color:var(--altin-yumusak);font-weight:650}
-  .kart p{margin:0;font-size:.92rem;color:var(--solgun)}
-  /* --- Ekran görüntüleri -------------------------------------------------- */
-  .serit{
-    display:flex;gap:14px;overflow-x:auto;padding:4px 4px 16px;
-    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-  }
-  .serit figure{margin:0;flex:0 0 auto;width:216px;scroll-snap-align:center}
-  .serit img{
-    width:216px;height:384px;border-radius:14px;display:block;
-    border:1px solid var(--kenarlik);background:var(--yuzey);
-  }
-  .serit figcaption{font-size:.8rem;color:var(--silik);text-align:center;margin-top:8px}
-  .kaydirma{display:none;text-align:center;color:var(--silik);font-size:.82rem;margin:0}
-  .serit::-webkit-scrollbar{height:6px}
-  .serit::-webkit-scrollbar-thumb{background:var(--kenarlik);border-radius:3px}
-  /* --- Kurulum ------------------------------------------------------------ */
-  ol.adimlar{list-style:none;counter-reset:adim;margin:0;padding:0}
-  ol.adimlar li{
-    counter-increment:adim;position:relative;margin:0 0 14px;padding:16px 20px 16px 62px;
-    background:var(--yuzey);border:1px solid var(--kenarlik);border-radius:14px;
-    font-size:.95rem;color:var(--solgun);
-  }
-  ol.adimlar li::before{
-    content:counter(adim);position:absolute;left:18px;top:15px;
-    width:28px;height:28px;border-radius:50%;text-align:center;line-height:28px;
-    background:rgba(255,215,0,.13);color:var(--altin);font-weight:800;font-size:.85rem;
-    border:1px solid rgba(255,215,0,.32);
-  }
-  ol.adimlar strong{color:var(--metin)}
-  .not{
-    font-size:.86rem;color:var(--silik);background:rgba(255,255,255,.02);
-    border:1px dashed var(--kenarlik);border-radius:12px;padding:12px 16px;
-  }
-  /* --- SSS ---------------------------------------------------------------- */
-  details{
-    background:var(--yuzey);border:1px solid var(--kenarlik);border-radius:12px;
-    padding:15px 20px;margin:0 0 10px;
-  }
-  details[open]{border-color:#3A3A46}
-  summary{cursor:pointer;font-weight:600;font-size:.97rem;list-style:none}
-  summary::-webkit-details-marker{display:none}
-  summary::before{content:"+ ";color:var(--altin-koyu);font-weight:800}
-  details[open] summary::before{content:"– "}
-  details p{margin:11px 0 2px;font-size:.93rem;color:var(--solgun)}
-  /* --- Doğrulama ---------------------------------------------------------- */
-  .hash{
-    display:block;word-break:break-all;background:var(--yuzey-acik);
-    border:1px solid var(--kenarlik);border-radius:10px;padding:13px 16px;
-    font-size:.8rem;color:var(--yesil);line-height:1.55;
-  }
-  /* --- Alt bilgi ---------------------------------------------------------- */
-  footer{
-    margin-top:64px;padding-top:26px;border-top:1px solid var(--kenarlik);
-    color:var(--silik);font-size:.88rem;text-align:center;
-  }
-  footer p{margin:0 0 8px}
-  footer a{color:var(--solgun)}
-  @media (max-width:640px){
-    body{font-size:16px}
-    .kap{padding-left:18px;padding-right:18px}
-    header.kahraman{padding-top:40px}
-    .indir{display:block;padding:16px 20px}
-    .kaydirma{display:block;margin-top:-6px}
-    section{margin-top:46px}
-  }
-  @media print{
-    body{background:#fff;color:#000}
-    .serit,.rozetler,.kaydirma{display:none}
-    .kart,ol.adimlar li,details{border-color:#999;background:#fff}
-  }
-</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -206,11 +71,221 @@
   ]
 }
 </script>
+<script type="module" src="varliklar/murekkep.js"></script>
+<style>
+  /* Bu sayfaya özgü düzen. Renk, yazı tipi, kayıt satırı ve düğme gibi ortak
+     parçalar `varliklar/kimlik.css` içinden gelir; burada yalnızca bu sayfaya
+     özgü bileşenler var. Ham renk yazmak yerine değişken kullanılır. */
+  .kap { max-width: 900px; margin: 0 auto; padding: 0 var(--bosluk) 80px; }
+  /* Stüdyo işareti bu sayfada görsel dosyası olarak gelmez (uygulama deposunda
+     stüdyo görselleri yok); pirinç bir kare, markanın rengini taşır. */
+  .marka-isaret {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background: var(--pirinc);
+    flex: 0 0 auto;
+  }
+  /* — Kahraman ————————————————————————————————————————————————————————
+     Vitrindeki `.kahraman` tam ekranlık (WebGL tuvali için); burada 60 svh
+     yeterli, o yüzden ayrı sınıf kullanılır. Tuval olmadığı için betik
+     `murekkep-yok` sınıfını ekler ve statik mürekkep yıkaması devreye girer —
+     yani bu sayfanın kahramanı da "mürekkep" görünür. */
+  .uygulama-kahraman {
+    position: relative;
+    padding: clamp(40px, 9vh, 84px) 0 clamp(30px, 6vh, 52px);
+    text-align: center;
+  }
+  .simge {
+    width: 104px;
+    height: 104px;
+    border-radius: 26px;
+    display: block;
+    margin: 0 auto 22px;
+    border: 1px solid var(--kenar);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, .55), 0 0 0 1px rgba(200, 154, 78, .12);
+  }
+  .amblem {
+    display: block;
+    font-size: .86rem;
+    color: var(--pirinc);
+    margin: 0 0 12px;
+  }
+  .uygulama-kahraman h1 {
+    font-family: var(--yazi-baslik);
+    font-size: clamp(2.6rem, 11vw, 4.4rem);
+    line-height: .96;
+    letter-spacing: -.03em;
+    font-weight: 600;
+    margin: 0 0 16px;
+  }
+  .slogan {
+    color: var(--kagit-soluk);
+    font-size: clamp(.98rem, .35vw + .9rem, 1.1rem);
+    max-width: 34em;
+    margin: 0 auto 30px;
+  }
+  .slogan strong { color: var(--kagit); }
+  .surum {
+    color: var(--kagit-silik);
+    font-size: .84rem;
+    margin: 16px 0 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .rozetler {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 0;
+    margin: 26px 0 0;
+  }
+  .rozetler li {
+    font-size: .78rem;
+    color: var(--kagit-soluk);
+    padding: 6px 14px;
+    border: 1px solid var(--kenar);
+    border-radius: 999px;
+  }
+  /* — Bölümler ————————————————————————————————————————————————————————— */
+  section { margin-top: clamp(52px, 10vh, 92px); }
+  section > h2 {
+    font-family: var(--yazi-baslik);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -.02em;
+    margin: 0 0 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--kenar);
+  }
+  /* — Özellikler ——————————————————————————————————————————————————————
+     Kart yerine kayıt satırı: kutu, gölge ve tekrar eden yuvarlak köşe yok.
+     Sütunlar bir defterin kenar başlıkları gibi üstte ince çizgiyle ayrılır. */
+  .izgara {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+    gap: 0 clamp(20px, 3vw, 34px);
+  }
+  .kart {
+    border-top: 1px solid var(--kenar);
+    padding: 16px 0 20px;
+  }
+  .kart h3 {
+    font-family: var(--yazi-baslik);
+    margin: 0 0 8px;
+    font-size: 1.16rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    color: var(--kagit);
+  }
+  .kart p { margin: 0; font-size: .92rem; color: var(--kagit-soluk); }
+  /* — Ekran görüntüleri ——————————————————————————————————————————————— */
+  .serit {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 4px 4px 18px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .serit figure { margin: 0; flex: 0 0 auto; width: 224px; scroll-snap-align: center; }
+  .serit img {
+    width: 224px;
+    height: 398px;
+    border-radius: 18px;
+    display: block;
+    border: 1px solid var(--kenar);
+    background: var(--gece-kutu);
+  }
+  .serit figcaption {
+    font-size: .78rem;
+    color: var(--kagit-silik);
+    text-align: center;
+    margin-top: 10px;
+  }
+  .serit::-webkit-scrollbar { height: 6px; }
+  .serit::-webkit-scrollbar-thumb { background: var(--kenar-kuvvetli); border-radius: 3px; }
+  .kaydirma { display: none; text-align: center; color: var(--kagit-silik); font-size: .82rem; margin: 0; }
+  /* — Kurulum: sıralı bir akış olduğu için numaralandırma burada anlamlı — */
+  ol.adimlar { list-style: none; counter-reset: adim; margin: 0; padding: 0; }
+  ol.adimlar li {
+    counter-increment: adim;
+    position: relative;
+    margin: 0;
+    padding: 18px 0 18px 62px;
+    border-top: 1px solid var(--kenar);
+    font-size: .95rem;
+    color: var(--kagit-soluk);
+  }
+  ol.adimlar li::before {
+    content: counter(adim);
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid rgba(200, 154, 78, .45);
+    color: var(--pirinc-parlak);
+    font-weight: 600;
+    font-size: .9rem;
+  }
+  ol.adimlar strong { color: var(--kagit); }
+  .not {
+    font-size: .86rem;
+    color: var(--kagit-silik);
+    border-left: 1px solid var(--kenar-kuvvetli);
+    padding: 4px 0 4px 16px;
+    margin: 20px 0 0;
+  }
+  /* — SSS ————————————————————————————————————————————————————————————— */
+  details { border-top: 1px solid var(--kenar); padding: 16px 0; }
+  details:last-of-type { border-bottom: 1px solid var(--kenar); }
+  summary { cursor: pointer; font-weight: 600; font-size: .98rem; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: '+ '; color: var(--pirinc); font-weight: 600; }
+  details[open] summary::before { content: '– '; }
+  details p { margin: 12px 0 0; font-size: .93rem; color: var(--kagit-soluk); }
+  /* — Doğrulama ———————————————————————————————————————————————————————— */
+  .hash {
+    display: block;
+    word-break: break-all;
+    background: var(--gece-kutu);
+    border: 1px solid var(--kenar);
+    border-radius: var(--yuvarlak-kucuk);
+    padding: 14px 16px;
+    font-size: .8rem;
+    color: var(--iyi);
+    line-height: 1.55;
+  }
+  @media (max-width: 640px) {
+    .kaydirma { display: block; margin-top: -6px; }
+    .kap { padding-bottom: 56px; }
+  }
+</style>
 </head>
 <body>
+<header class="ustbar">
+  <div class="ortak ustbar-ic">
+    <a class="marka" href="https://hamit4sl4n.github.io/">
+      <span class="marka-isaret" aria-hidden="true"></span>
+      <span>4SL4N Studio</span>
+    </a>
+    <nav class="ustbar-baglantilar" aria-label="Sayfa bölümleri">
+      <a href="#neler-var">Neler var</a>
+      <a href="#ekranlar">Ekranlar</a>
+      <a href="#kurulum">Kurulum</a>
+      <a href="https://github.com/hamit4sl4n/hamit4sl4n.github.io/releases/download/tesbihat-1.0.0+4/Tesbihat.apk">İndir</a>
+    </nav>
+  </div>
+</header>
 <div class="kap">
-  <header class="kahraman">
-    <img class="simge" src="gorseller/simge-192.png" width="96" height="96"
+  <header class="uygulama-kahraman">
+    <img class="simge morf" src="gorseller/simge-192.png" width="104" height="104"
          alt="Tesbihat uygulama simgesi: koyu zemin üzerinde altın misbaha halkası">
     <p class="amblem">4SL4N Studio</p>
     <h1>Tesbihat</h1>
@@ -218,7 +293,7 @@
       Zikirmatik, dua ve Esmâ-i Hüsna.<br>
       <strong>Tamamen çevrimdışı</strong>, tüm özellikleri ücretsiz.
     </p>
-    <a class="indir" href="https://github.com/hamit4sl4n/hamit4sl4n.github.io/releases/download/tesbihat-1.0.0+4/Tesbihat.apk">APK'yı indir</a>
+    <a class="dugme" href="https://github.com/hamit4sl4n/hamit4sl4n.github.io/releases/download/tesbihat-1.0.0+4/Tesbihat.apk">APK'yı indir</a>
     <p class="surum">sürüm 1.0.0 · 55,6 MB · Android 7.0 ve üzeri</p>
     <ul class="rozetler">
       <li>Hesap gerekmez</li>
@@ -226,8 +301,8 @@
       <li>Veriler cihazda kalır</li>
     </ul>
   </header>
-  <section>
-    <h2><span>01</span>Neler var?</h2>
+  <section id="neler-var" class="belir">
+    <h2>Neler var?</h2>
     <div class="izgara">
       <div class="kart">
         <h3>Zikirmatik</h3>
@@ -276,8 +351,8 @@
       </div>
     </div>
   </section>
-  <section>
-    <h2><span>02</span>Ekran görüntüleri</h2>
+  <section id="ekranlar" class="belir">
+    <h2>Ekran görüntüleri</h2>
     <div class="serit">
       <figure><img src="gorseller/ekran-01.jpg" alt="Zikirmatik ekranı: dairesel sayaç ve hedef çipleri" loading="lazy"><figcaption>Dairesel sayaç ve hedefler</figcaption></figure>
       <figure><img src="gorseller/ekran-02.jpg" alt="Ses tuşuyla sayma ipucu görünen zikirmatik ekranı" loading="lazy"><figcaption>Ekrana bakmadan say</figcaption></figure>
@@ -290,8 +365,8 @@
     </div>
     <p class="kaydirma">← yana kaydır →</p>
   </section>
-  <section id="kurulum">
-    <h2><span>03</span>Kurulum — bir dakika</h2>
+  <section id="kurulum" class="belir">
+    <h2>Kurulum — bir dakika</h2>
     <ol class="adimlar">
       <li><strong>İndir.</strong> Yukarıdaki “APK'yı indir” düğmesine dokun;
           55,6 MB boyutundaki dosya iner.</li>
@@ -306,8 +381,8 @@
       yalnızca indirme içindir; uygulama kurulduktan sonra internetsiz çalışır.
     </p>
   </section>
-  <section>
-    <h2><span>04</span>Merak edilenler</h2>
+  <section class="belir">
+    <h2>Merak edilenler</h2>
     <details>
       <summary>Neden Google Play'de değil?</summary>
       <p>Uygulama şu an doğrudan APK olarak dağıtılıyor. Mağaza kaydı için gereken
@@ -345,18 +420,22 @@
          gereklidir.</p>
     </details>
   </section>
-  <section>
-    <h2><span>05</span>Dosya doğrulaması</h2>
-    <p style="color:var(--solgun);font-size:.93rem;margin-top:-6px">
+  <section class="belir">
+    <h2>Dosya doğrulaması</h2>
+    <p style="color:var(--kagit-soluk);font-size:.93rem;margin:-8px 0 14px">
       İndirdiğin APK'nın bütünlüğünü kontrol etmek istersen SHA-256 özeti:
     </p>
     <code class="hash">06fb7073292e1e03a79b3b33f235af46a1f90c0140a8e864721f240c30ced40d</code>
   </section>
   <footer>
-    <p><strong>Tesbihat</strong> · <a href="https://hamit4sl4n.github.io/"><strong>4SL4N Studio</strong></a> ·
-       <a href="https://hamit4sl4n.github.io/gizlilik/">Gizlilik politikası</a> ·
-       <a href="mailto:hamitaslan85@gmail.com">hamitaslan85@gmail.com</a></p>
-    <p>Son güncelleme: 23 Eylül 2026 · Paket: <code>com.hamit.tesbihat</code></p>
+    <div class="alt-izgara">
+      <p>
+        <strong>Tesbihat</strong> · <a href="https://hamit4sl4n.github.io/"><strong>4SL4N Studio</strong></a> ·
+        <a href="https://hamit4sl4n.github.io/gizlilik/">Gizlilik politikası</a> ·
+        <a href="mailto:hamitaslan85@gmail.com">hamitaslan85@gmail.com</a>
+      </p>
+      <p>Son güncelleme: 23 Eylül 2026 · Paket: <code>com.hamit.tesbihat</code></p>
+    </div>
   </footer>
 </div>
 </body>
